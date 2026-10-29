@@ -38,12 +38,14 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
+ 
   deploy:
     environment:
       name: github-pages

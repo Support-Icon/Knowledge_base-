@@ -5,8 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
 
-  base: 'https://github.com/Support-Icon/Knowledge_base-',
 
+  base: process.env.GITHUB_ACTIONS ? '/Knowledge_base-/' : '/',
+  
   server: {
     host: '0.0.0.0',
     port: 5173,

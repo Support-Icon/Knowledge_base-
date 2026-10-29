@@ -1,14 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
-const logo = '/images/helpdude_logo_transparent.svg';
-const mailDomainSetup = '/images/domain_set_up.svg';
-const emailReplyTemplate = '/images/email_template_setup.svg';
-const portalSetup = '/images/portal_Setup.svg';
-const chatEmbeddedSetup = '/images/Chat_embeded_Setup.svg';
-const chatWidgetFullChat = '/images/chat_widget_full_chat.svg';
-const chatWidgetWeb = '/images/Chat_widget_web.svg';
-const liveAgentScript = '/images/live_Agent_script.svg';
-const liveAgentPicture = '/images/live_agent_pic(1).svg';
-const liveAgentFullPicture = '/images/live_Agent_full_pic.svg';
+const imageBase = `${import.meta.env.BASE_URL}images/`;
+const logo = `${imageBase}helpdude_logo_transparent.svg`;
+const mailDomainSetup = `${imageBase}domain_set_up.svg`;
+const emailReplyTemplate = `${imageBase}email_template_setup.svg`;
+const portalSetup = `${imageBase}portal_Setup.svg`;
+const chatEmbeddedSetup = `${imageBase}Chat_embeded_Setup.svg`;
+const chatWidgetFullChat = `${imageBase}chat_widget_full_chat.svg`;
+const chatWidgetWeb = `${imageBase}Chat_widget_web.svg`;
+const liveAgentScript = `${imageBase}live_Agent_script.svg`;
+const liveAgentPicture = `${imageBase}live_agent_pic(1).svg`;
+const liveAgentFullPicture = `${imageBase}live_Agent_full_pic.svg`;
 
 // Configure these in your .env file when the production URLs are available.
 const demoUrl = import.meta.env.VITE_DEMO_URL;
